@@ -37,7 +37,7 @@ public class StartCommandsExecutionImpl {
 			String homeDirPath = ApplicationProperties.getProperty("home.dir.path");
 			String commands="git config --global --add safe.directory "+homeDirPath+"oe-core/.repo/repo,"
 					+ "repo init -u git://git.toradex.com/toradex-manifest.git -b kirkstone-6.x.y -m tdxref/default.xml,"
-					+ "repo sync,. export,bitbake core-image-minimal";
+					+ "repo sync,bitbake core-image-minimal";
 			
 			
 //			String commands="cd /home/ubuntu/oe-core,repo init -u git://git.toradex.com/toradex-manifest.git -b kirkstone-6.x.y -m tdxref/default.xml," + 
